@@ -1,0 +1,9 @@
+
+ <button (click)="getdata()" class="btn btn-success" style="margin-right:10px">Get Datas</button>
+    <h3>{{name}}</h3>
+  <div *ngIf= "Items">
+    <div *ngFor = "let Item of Items">
+      <h3>{{Item.Id}}</h3>
+      <p>{{Item.title}}</p>
+      <p>{{Item.body}}</p>     
+  </div>
